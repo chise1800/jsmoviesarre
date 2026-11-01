@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="movie-list"></div>
+
+    <script>
+        let movies = [
+            { number: 1, movieName: 'Silent Hill', year: 2006, rating: 6.5 },
+            { number: 2, movieName: 'Resident Evil', year: 2002, rating: 6.6 },
+            { number: 3, movieName: 'The Crow', year: 1994, rating: 7.5 },
+            { number: 4, movieName: 'The Matrix', year: 1999, rating: 8.7 },
+            { number: 5, movieName: 'Fight Club', year: 1999, rating: 8.8 },
+            { number: 6, movieName: 'Donnie Darko', year: 2001, rating: 8.0 },
+            { number: 7, movieName: 'Pulp Fiction', year: 1994, rating: 8.9 },
+            { number: 8, movieName: 'Se7en', year: 1995, rating: 8.6 },
+            { number: 9, movieName: 'The Others', year: 2001, rating: 7.6 },
+            { number: 10, movieName: 'Constantine', year: 2005, rating: 7.0 },
+            { number: 11, movieName: 'Blade', year: 1998, rating: 7.1 },
+            { number: 12, movieName: 'Underworld', year: 2003, rating: 7.0 },
+            { number: 13, movieName: 'Van Helsing', year: 2004, rating: 6.1 },
+            { number: 14, movieName: 'Sleepy Hollow', year: 1999, rating: 7.3 },
+            { number: 15, movieName: 'Edward Scissorhands', year: 1990, rating: 7.9 },
+            { number: 16, movieName: 'Sweeney Todd', year: 2007, rating: 7.3 },
+            { number: 17, movieName: 'Coraline', year: 2009, rating: 7.7 },
+            { number: 18, movieName: 'The Ring', year: 2002, rating: 7.1 },
+            { number: 19, movieName: 'Saw', year: 2004, rating: 7.6 },
+            { number: 20, movieName: '1408', year: 2007, rating: 6.8 }
+        ];
+
+        const movieList = document.querySelector('.movie-list');
+
+        for (let i = 0; i < movies.length; i++) {
+            movieList.innerHTML += `
+                <div class="movie">
+                    <h2>${movies[i].number} ${movies[i].movieName}</h2>
+                    <p class="year">Year: ${movies[i].year}</p>
+                    <div class="bottom-row">
+                        <p class="rating">${movies[i].rating}</p>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+
+</html>

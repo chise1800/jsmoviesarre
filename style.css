@@ -1,0 +1,57 @@
+  body {
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+      background: #0e1223;
+  }
+
+  .movie-list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .movie {
+    background: rgb(255, 253, 243);
+      width: 300px;
+      border: 1px solid #000;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px;
+  }
+
+  .movie h2 {
+      margin: 12px 0 8px 0;
+  }
+
+  .year {
+      margin: 4px 0;
+      color: #555;
+  }
+
+  .bottom-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+  }
+
+  .rating {
+      color: red;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+  }
+
+  .buy-btn {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.2s ease;
+  }
+
+  .buy-btn:hover {
+      background-color: #333;
+  }
